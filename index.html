@@ -17,8 +17,8 @@
                 </div>
                  <div class="bg-white h-[284px] w-[536px] drop-shadow-xl rounded-lg ">
                    <div class="bg-slate-50 flex justify-between items-center px-5 rounded-lg ">
-                    <div class=" mx-5" id="inputForm">
-                        <input class="text-slate-800 bg-slate-50 text-base font-normal leading-5 border-0 outline-0 " type="text" placeholder="Type Task Name Here">
+                    <div class=" mx-5">
+                        <input id="todo-input" class="text-slate-800 bg-slate-50 text-base font-normal leading-5 border-0 outline-0 " type="text" placeholder="Type Task Name Here">
                     </div>
                    <div class="py-3" id="createButton"> 
                        <button class="bg-emerald-600 rounded py-3 px-4 flex items-center">
@@ -28,20 +28,29 @@
                     </div>
                    </div>
                    <p class="text-sm font-medium leading-[18px] py-7 px-[30px]">Tasks</p>
-                   <div class="flex pb-7 px-[30px]">
-                       <span class="hidden"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="23" height="23" rx="11.5" fill="#FEFEFE"/><rect x=".5" y=".5" width="23" height="23" rx="11.5" stroke="#E2E8F0"/></svg></span>
-                        <span> <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#10B981"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.366 8.234a.8.8 0 0 1 0 1.132l-6.4 6.4a.8.8 0 0 1-1.132 0l-3.2-3.2a.8.8 0 0 1 1.132-1.132L10.4 14.07l5.834-5.835a.8.8 0 0 1 1.132 0Z" fill="#FEFEFE"/></svg></span>
-                        <p class="text-slate-700 pl-3 text-lg font-normal leading-[23px]">Become a great developer</p>
-                    </div>
-                    <div class="flex px-[30px]">
-                        <span class="hidden"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="23" height="23" rx="11.5" fill="#FEFEFE"/><rect x=".5" y=".5" width="23" height="23" rx="11.5" stroke="#E2E8F0"/></svg></span>
-                         <span> <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#10B981"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.366 8.234a.8.8 0 0 1 0 1.132l-6.4 6.4a.8.8 0 0 1-1.132 0l-3.2-3.2a.8.8 0 0 1 1.132-1.132L10.4 14.07l5.834-5.835a.8.8 0 0 1 1.132 0Z" fill="#FEFEFE"/></svg></span>
-                         <p class="text-slate-700 pl-3 text-lg font-normal leading-[23px]">Become a great developer</p>
-                     </div>
+                   
+                   <div id="todos">
+                    
+                    
+                </div>
                  </div>
             </div>
      </section>
-     
+     <!-- <div class="">
+        <span class="hidden"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="23" height="23" rx="11.5" fill="#FEFEFE"/><rect x=".5" y=".5" width="23" height="23" rx="11.5" stroke="#E2E8F0"/></svg></span>
+         <span> <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#10B981"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.366 8.234a.8.8 0 0 1 0 1.132l-6.4 6.4a.8.8 0 0 1-1.132 0l-3.2-3.2a.8.8 0 0 1 1.132-1.132L10.4 14.07l5.834-5.835a.8.8 0 0 1 1.132 0Z" fill="#FEFEFE"/></svg></span>
+         <p class="text-slate-700 pl-3 text-lg font-normal leading-[23px]">Become a great developer</p>
+     </div> -->
+     <!-- <div class="flex px-[30px]" id="hiddenTask">
+         <span class="hidden" id="blankButton"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="23" height="23" rx="11.5" fill="#FEFEFE"/><rect x=".5" y=".5" width="23" height="23" rx="11.5" stroke="#E2E8F0"/></svg></span>
+          <span id="tickButton"> <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#10B981"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.366 8.234a.8.8 0 0 1 0 1.132l-6.4 6.4a.8.8 0 0 1-1.132 0l-3.2-3.2a.8.8 0 0 1 1.132-1.132L10.4 14.07l5.834-5.835a.8.8 0 0 1 1.132 0Z" fill="#FEFEFE"/></svg></span>
+          <p class="text-slate-700 pl-3 text-lg font-normal leading-[23px]">Become a great developer</p>
+      </div> -->
+      <!-- <div class="flex pb-7 px-[30px]">
+          <img  class="" src="images/Tick.png" alt="Tick">
+          <p class="text-slate-700 pl-3 text-lg font-normal leading-[23px]">Become a great developer</p>
+             
+     </div> -->
         
      <script src="js/todolist.js" type="text/JavaScript" ></script>
   </body>
