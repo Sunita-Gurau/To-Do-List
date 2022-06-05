@@ -16,9 +16,8 @@ createButton.addEventListener('click',()=>{
         alert("You must write something!");
       }
        else {
-           
         const div=document.createElement("div")
-        div.classList.add('flex', 'px-[30px]', 'pb-7');
+        div.classList.add('flex','items-center', 'px-[30px]', 'pb-7');
 
         const tickBox=document.createElement("img");
         tickBox.setAttribute("src", "images/Tick.png");
