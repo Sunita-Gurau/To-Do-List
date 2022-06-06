@@ -1,4 +1,6 @@
 const todoInput = document.getElementById('todo-input');
+const CButton = document.getElementById('CButton');
+
 const createButton = document.getElementById('createButton');
 const hiddenTask = document.getElementById('hiddenTask');
 const blankButton = document.getElementById('blankButton');
@@ -51,3 +53,14 @@ else{
 e.target.nextSibling.classList.toggle("line-through");
 
 })
+
+
+
+
+todoInput.addEventListener('click',()=>{
+    todoInput.classList.toggle('text-black');
+    todoInput.classList.toggle('text-slate-800');
+    CButton.classList.add('bg-emerald-700');
+    
+    })
+    text-slate-800 
