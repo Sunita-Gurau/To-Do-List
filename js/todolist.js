@@ -1,11 +1,12 @@
 const todoInput = document.getElementById('todo-input');
 const CButton = document.getElementById('CButton');
-
 const createButton = document.getElementById('createButton');
 const hiddenTask = document.getElementById('hiddenTask');
 const blankButton = document.getElementById('blankButton');
 const tickButton = document.getElementById('tickButton');
 const todos = document.getElementById('todos');
+const toDoSection = document.getElementById('toDoSection');
+
 
 
 
@@ -22,7 +23,7 @@ createButton.addEventListener('click',()=>{
         div.classList.add('flex','items-center', 'px-[30px]', 'pb-7');
 
         const tickBox=document.createElement("img");
-        tickBox.setAttribute("src", "images/Tick.png");
+        tickBox.setAttribute("src", "images/Untick.png");
         tickBox.setAttribute("class", "tick");
 
 
@@ -36,19 +37,16 @@ createButton.addEventListener('click',()=>{
         todoInput.value = "";
       }
 
-    
-
-
 })
 
 
 todos.addEventListener('click',(e)=>{
 e.target.classList.toggle("tick")
 if(e.target.classList.value==="tick"){
-    e.target.src="./images/tick.png";
+    e.target.src="./images/Untick.png";
 }
 else{
-    e.target.src="./images/Untick.png";
+    e.target.src="./images/tick.png";
 }
 e.target.nextSibling.classList.toggle("line-through");
 
@@ -57,10 +55,19 @@ e.target.nextSibling.classList.toggle("line-through");
 
 
 
-todoInput.addEventListener('click',()=>{
-    todoInput.classList.toggle('text-black');
-    todoInput.classList.toggle('text-slate-800');
+todoInput.addEventListener('click',(e)=>{
+    e.stopPropagation();
+    CButton.classList.remove('bg-emerald-100');
     CButton.classList.add('bg-emerald-700');
-    
+    CButton.classList.remove('disabled');
+
     })
-    text-slate-800 
+    
+    toDoSection.addEventListener('click',()=>{
+    
+        CButton.classList.add('bg-emerald-100');
+    CButton.classList.remove('bg-emerald-700');
+    CButton.classList.add('disabled');
+        
+        })
+
